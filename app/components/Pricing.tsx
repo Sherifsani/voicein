@@ -7,7 +7,7 @@ const Pricing = () => {
   return (
     <section id="pricing" className="bg-gray-100 py-16 px-3 md:px-0">
       <div className="w-full max-w-7xl mx-auto">
-        <div className="flex flex-col gap-3 items-center text-center">
+        <div className="flex flex-col gap-3 items-center text-center animate-fadeInUp">
           <Badge text="Transparent Pricing" />
           <h2 className="text-3xl font-semibold">
             Free Invoice Generator with Pay-As-You-Go Pricing
@@ -17,9 +17,9 @@ const Pricing = () => {
             you get paid
           </p>
         </div>
-        <div className="bg-white shadow-sm border-gray-100 border rounded-lg max-w-3xl mx-auto mt-10">
+        <div className="bg-white shadow-sm border-gray-100 border rounded-lg max-w-3xl mx-auto mt-10 animate-fadeInUp animation-delay-200 hover:shadow-lg transition-shadow duration-300">
           <div className="top-section p-6 border-b-gray-300 border-b-[0.5px] text-center flex items-center gap-2 flex-col">
-            <div className="p-3 text-[#4F65B0] bg-[#4F65B0]/10 rounded-full">
+            <div className="p-3 text-[#4F65B0] bg-[#4F65B0]/10 rounded-full animate-pulse">
               <CiDollar className="text-[#4F65B0] text-2xl" />
             </div>
             <h3 className="font-semibold text-2xl">
@@ -87,7 +87,7 @@ const Pricing = () => {
           <div className="bottom-bar flex flex-col items-center p-6 gap-2">
             <a
               href="/dashboard"
-              className="text-white bg-[#4f66b0] text-xl px-5 py-3 rounded-lg block text-center hover:bg-[#4f66b0]/90 transition-all duration-300 ease-in-out font-semibold"
+              className="text-white bg-[#4f66b0] text-xl px-5 py-3 rounded-lg block text-center hover:bg-[#4f66b0]/90 hover:scale-105 transition-all duration-300 ease-in-out font-semibold transform"
             >
               Get Started
             </a>

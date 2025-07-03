@@ -7,7 +7,7 @@ const Features = () => {
   return (
     <section id="features" className="py-20 bg-gray-100 px-3 md:px-0 ">
       <div className="mx-auto max-w-7xl flex flex-col gap-12">
-        <div className="flex flex-col items-center gap-4 text-center">
+        <div className="flex flex-col items-center gap-4 text-center animate-fadeInUp">
           <Badge text="Features" />
           <h2 className="font-bold text-4xl md:text-5xl">
             Create, Send & Track Invoices Easily
@@ -21,7 +21,13 @@ const Features = () => {
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-7">
           {featuresData.map(({ icon, head, text }, idx) => (
-            <FeatureCard key={idx} iconText={icon} head={head} text={text} />
+            <div
+              key={idx}
+              className="animate-fadeInUp"
+              style={{ animationDelay: `${idx * 100}ms` }}
+            >
+              <FeatureCard iconText={icon} head={head} text={text} />
+            </div>
           ))}
         </div>
       </div>
