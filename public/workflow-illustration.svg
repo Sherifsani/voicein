@@ -1,0 +1,65 @@
+<svg width="600" height="160" viewBox="0 0 600 160" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="600" height="160" rx="16" fill="oklch(0.98 0.02 260)" opacity="0.3"/>
+  
+  <!-- Step 1: Create Invoice -->
+  <g transform="translate(60, 45)">
+    <!-- Create Icon -->
+    <circle cx="30" cy="30" r="30" fill="oklch(0.49 0.15 260)" opacity="0.1"/>
+    <g transform="translate(15, 15)">
+      <rect x="0" y="0" width="30" height="30" rx="2" fill="none" stroke="oklch(0.49 0.15 260)" stroke-width="2"/>
+      <path d="M8 8 H22 M8 15 H22 M8 22 H16" stroke="oklch(0.49 0.15 260)" stroke-width="2" stroke-linecap="round"/>
+      <path d="M22 22 L26 26 M26 22 L22 26" stroke="oklch(0.49 0.15 260)" stroke-width="2" stroke-linecap="round"/>
+    </g>
+  </g>
+  
+  <!-- Arrow from step 1 to 2 -->
+  <path d="M130 70 H220" stroke="oklch(0.49 0.15 260)" stroke-width="2" stroke-dasharray="4 2"/>
+  <path d="M215 65 L220 70 L215 75" stroke="oklch(0.49 0.15 260)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Step 2: Send to Client -->
+  <g transform="translate(250, 45)">
+    <!-- Send Icon -->
+    <circle cx="30" cy="30" r="30" fill="oklch(0.49 0.15 260)" opacity="0.1"/>
+    <g transform="translate(15, 15)">
+      <path d="M0 0 L30 15 L0 30 L0 0 Z" fill="none" stroke="oklch(0.49 0.15 260)" stroke-width="2" stroke-linejoin="round"/>
+      <path d="M10 15 H1" stroke="oklch(0.49 0.15 260)" stroke-width="2" stroke-linecap="round"/>
+    </g>
+  </g>
+  
+  <!-- Arrow from step 2 to 3 -->
+  <path d="M320 70 H410" stroke="oklch(0.49 0.15 260)" stroke-width="2" stroke-dasharray="4 2"/>
+  <path d="M405 65 L410 70 L405 75" stroke="oklch(0.49 0.15 260)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Step 3: Get Paid -->
+  <g transform="translate(440, 45)">
+    <!-- Payment Icon -->
+    <circle cx="30" cy="30" r="30" fill="oklch(0.49 0.15 260)" opacity="0.1"/>
+    <g transform="translate(15, 15)">
+      <rect x="0" y="5" width="30" height="20" rx="2" fill="none" stroke="oklch(0.49 0.15 260)" stroke-width="2"/>
+      <path d="M0 12 H30" stroke="oklch(0.49 0.15 260)" stroke-width="2"/>
+      <circle cx="23" cy="18" r="4" fill="none" stroke="oklch(0.49 0.15 260)" stroke-width="1.5"/>
+    </g>
+  </g>
+  
+  <!-- Number Labels -->
+  <g transform="translate(60, 15)">
+    <circle cx="30" cy="0" r="12" fill="oklch(0.49 0.15 260)"/>
+    <text x="30" y="4" font-family="Arial" font-size="12" font-weight="bold" fill="white" text-anchor="middle">1</text>
+  </g>
+  
+  <g transform="translate(250, 15)">
+    <circle cx="30" cy="0" r="12" fill="oklch(0.49 0.15 260)"/>
+    <text x="30" y="4" font-family="Arial" font-size="12" font-weight="bold" fill="white" text-anchor="middle">2</text>
+  </g>
+  
+  <g transform="translate(440, 15)">
+    <circle cx="30" cy="0" r="12" fill="oklch(0.49 0.15 260)"/>
+    <text x="30" y="4" font-family="Arial" font-size="12" font-weight="bold" fill="white" text-anchor="middle">3</text>
+  </g>
+  
+  <!-- Step Labels -->
+  <text x="90" y="120" font-family="Arial" font-size="12" font-weight="medium" fill="oklch(0.45 0 0)" text-anchor="middle">Create Invoice</text>
+  <text x="280" y="120" font-family="Arial" font-size="12" font-weight="medium" fill="oklch(0.45 0 0)" text-anchor="middle">Send to Client</text>
+  <text x="470" y="120" font-family="Arial" font-size="12" font-weight="medium" fill="oklch(0.45 0 0)" text-anchor="middle">Get Paid</text>
+</svg> 

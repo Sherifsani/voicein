@@ -35,7 +35,7 @@ const FeatureCard = ({ iconText, head, text }: featureProps) => {
   };
 
   return (
-    <div className="flex flex-col gap-4 p-8 bg-white shadow-sm items-start rounded-xl">
+    <div className="feature-card flex flex-col gap-4 p-8 bg-white shadow-sm items-start rounded-xl transition-all duration-300 ease-in-out hover:scale-105 hover:backdrop-blur-md hover:bg-white/80 hover:shadow-lg cursor-pointer">
       <div className="p-3 text-[#4F65B0] bg-[#4F65B0]/10 rounded-2xl">
         {getIcon()}
       </div>
