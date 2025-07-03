@@ -56,12 +56,18 @@ const Nav = () => {
         </ul>
 
         <div className="cta hidden md:flex items-center gap-2 text-base">
-          <div className="rounded-lg py-2 px-4 border-gray-300 border-[0.3px]">
+          <a
+            className="rounded-lg py-2 px-4 border-gray-300 border-[0.3px]"
+            href="/dashboard"
+          >
             Sign in
-          </div>
-          <div className="bg-[#4F65B0] px-4 py-2 rounded-lg text-white ">
+          </a>
+          <a
+            className="bg-[#4F65B0] px-4 py-2 rounded-lg text-white"
+            href="/dashboard"
+          >
             Get started for free
-          </div>
+          </a>
         </div>
 
         <MobileMenu isOpen={isOpen} onLinkClick={handleScrollToSection} />

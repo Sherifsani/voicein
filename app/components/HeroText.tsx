@@ -19,9 +19,12 @@ const HeroText = () => {
       </p>
 
       <div className="cta flex flex-col md:flex-row gap-4  w-full text-lg">
-        <div className="bg-[#4F65B0] px-4 py-3 rounded-lg text-white grid place-items-center shadow font-semibold">
+        <a
+          className="bg-[#4F65B0] px-4 py-3 rounded-lg text-white grid place-items-center shadow font-semibold"
+          href="/dashboard"
+        >
           Get started for free
-        </div>
+        </a>
         <div className="rounded-lg py-3 px-4 border-gray-300 border-[0.3px] grid place-items-center shadow font-semibold">
           View Features
         </div>

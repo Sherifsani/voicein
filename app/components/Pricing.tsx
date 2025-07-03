@@ -86,7 +86,7 @@ const Pricing = () => {
           </div>
           <div className="bottom-bar flex flex-col items-center p-6 gap-2">
             <a
-              href=""
+              href="/dashboard"
               className="text-white bg-[#4f66b0] text-xl px-5 py-3 rounded-lg block text-center hover:bg-[#4f66b0]/90 transition-all duration-300 ease-in-out font-semibold"
             >
               Get Started

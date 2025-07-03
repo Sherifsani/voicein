@@ -35,12 +35,18 @@ const MobileMenu: React.FC<MobileMenuProps> = ({ isOpen, onLinkClick }) => {
         </li>
       </ul>
       <div className="cta flex flex-col gap-4 text-base w-full">
-        <div className="rounded-lg py-2 px-4 border-gray-300 border-[0.3px] grid place-items-center">
+        <a
+          className="rounded-lg py-2 px-4 border-gray-300 border-[0.3px] grid place-items-center"
+          href="/dashboard"
+        >
           Sign in
-        </div>
-        <div className="bg-[#4F65B0] px-4 py-2 rounded-lg text-white grid place-items-center">
+        </a>
+        <a
+          className="bg-[#4F65B0] px-4 py-2 rounded-lg text-white grid place-items-center"
+          href="/dashboard"
+        >
           Get started for free
-        </div>
+        </a>
       </div>
     </div>
   );
