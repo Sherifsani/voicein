@@ -3,6 +3,7 @@ import HeroPage from '../components/HeroPage'
 import Features from '../components/Features'
 import HowItWorks from '../components/HowItWorks'
 import Pricing from '../components/Pricing'
+import Faqs from '../components/Faqs'
 
 const page = () => {
   return (
@@ -10,7 +11,8 @@ const page = () => {
       <HeroPage />
       <Features />
       <HowItWorks />
-      <Pricing/>
+      <Pricing />
+      <Faqs/>
       {/* Add more sections as needed */}
     </div>
   )
