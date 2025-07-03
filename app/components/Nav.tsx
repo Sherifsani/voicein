@@ -11,6 +11,23 @@ const Nav = () => {
     setIsOpen((prev) => !prev);
   };
 
+  const handleScrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      const headerOffset = 100; // Account for fixed header
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition =
+        elementPosition + window.pageYOffset - headerOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+    }
+    // Close mobile menu if open
+    setIsOpen(false);
+  };
+
   return (
     <header className="fixed top-0 left-0 w-full backdrop-blur-md bg-white/80 z-50">
       <nav className="relative flex justify-between mx-auto max-w-7xl py-6 px-4 md:px-0 text-lg items-center z-10">
@@ -18,10 +35,24 @@ const Nav = () => {
           invoice<span>.</span>
         </h1>
         <ul className="gap-6 text-base hidden md:flex text-gray-500">
-          <li>About</li>
-          <li>Features</li>
-          <li>Screens</li>
-          <li>Help</li>
+          <li
+            className="hover:text-[#4F65B0] transition-colors cursor-pointer"
+            onClick={() => handleScrollToSection("features")}
+          >
+            Features
+          </li>
+          <li
+            className="hover:text-[#4F65B0] transition-colors cursor-pointer"
+            onClick={() => handleScrollToSection("pricing")}
+          >
+            Pricing
+          </li>
+          <li
+            className="hover:text-[#4F65B0] transition-colors cursor-pointer"
+            onClick={() => handleScrollToSection("faq")}
+          >
+            FAQ
+          </li>
         </ul>
 
         <div className="cta hidden md:flex items-center gap-2 text-base">
@@ -33,7 +64,7 @@ const Nav = () => {
           </div>
         </div>
 
-        <MobileMenu isOpen={isOpen} />
+        <MobileMenu isOpen={isOpen} onLinkClick={handleScrollToSection} />
         <div className="menu-icon md:hidden" onClick={toggleMenu}>
           {isOpen ? (
             <MdClose className="text-xl cursor-pointer" />

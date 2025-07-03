@@ -5,7 +5,7 @@ import { faqsData } from "../../data/index";
 
 const Faqs = () => {
   return (
-    <section className="py-16 px-3 md:px-0">
+    <section id="faq" className="py-16 px-3 md:px-0">
       <div className="flex flex-col gap-3 items-center text-center">
         <Badge text="FAQs" />
         <h2 className="text-3xl font-semibold">Frequently Asked Questions</h2>

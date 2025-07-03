@@ -5,7 +5,7 @@ import { IoMdCheckmark } from "react-icons/io";
 
 const Pricing = () => {
   return (
-    <section className="bg-gray-100 py-16 px-3 md:px-0">
+    <section id="pricing" className="bg-gray-100 py-16 px-3 md:px-0">
       <div className="w-full max-w-7xl mx-auto">
         <div className="flex flex-col gap-3 items-center text-center">
           <Badge text="Transparent Pricing" />
@@ -85,10 +85,15 @@ const Pricing = () => {
             </div>
           </div>
           <div className="bottom-bar flex flex-col items-center p-6 gap-2">
-            <a href="" className="text-white bg-[#4f66b0] text-xl px-5 py-3 rounded-lg block text-center hover:bg-[#4f66b0]/90 transition-all duration-300 ease-in-out font-semibold">
+            <a
+              href=""
+              className="text-white bg-[#4f66b0] text-xl px-5 py-3 rounded-lg block text-center hover:bg-[#4f66b0]/90 transition-all duration-300 ease-in-out font-semibold"
+            >
               Get Started
             </a>
-            <p className="text-sm text-gray-500">No credit card required • No hidden fees</p>
+            <p className="text-sm text-gray-500">
+              No credit card required • No hidden fees
+            </p>
           </div>
         </div>
       </div>

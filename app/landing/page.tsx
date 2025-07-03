@@ -4,6 +4,7 @@ import Features from '../components/Features'
 import HowItWorks from '../components/HowItWorks'
 import Pricing from '../components/Pricing'
 import Faqs from '../components/Faqs'
+import Footer from '../components/Footer'
 
 const page = () => {
   return (
@@ -12,8 +13,8 @@ const page = () => {
       <Features />
       <HowItWorks />
       <Pricing />
-      <Faqs/>
-      {/* Add more sections as needed */}
+      <Faqs />
+      <Footer />
     </div>
   )
 }

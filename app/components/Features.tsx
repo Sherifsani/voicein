@@ -5,7 +5,7 @@ import { featuresData } from "@/data";
 
 const Features = () => {
   return (
-    <section className="py-20 bg-gray-100 px-3 md:px-0 ">
+    <section id="features" className="py-20 bg-gray-100 px-3 md:px-0 ">
       <div className="mx-auto max-w-7xl flex flex-col gap-12">
         <div className="flex flex-col items-center gap-4 text-center">
           <Badge text="Features" />
