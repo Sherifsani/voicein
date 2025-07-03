@@ -33,7 +33,7 @@ body {
 .feature-card::before{
   content:'';
   position: absolute;
-  background-color: #4f66b03a;
+  background-color: #4f66b013;
   width: 50%;
   height: 100%;
   bottom: 0;

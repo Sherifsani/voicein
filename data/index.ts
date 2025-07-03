@@ -30,3 +30,18 @@ export const featuresData = [
     text: "Support for NGN, GHS, KES, and USD to serve clients across Africa and worldwide with transparent pricing.",
   },
 ];
+
+export const howItworksData = [
+  {
+    head: "Create a Professional Invoice",
+    text: "Fill in client details, add line items, set due dates, and customize with your logo to create professional invoices for your clients.",
+  },
+  {
+    head: "Send to Your Client",
+    text: "Email the invoice directly to your client with a secure payment link for fast payment acceptance across Africa.",
+  },
+  {
+    head: "Get Paid Quickly Online",
+    text: "Clients pay via their preferred method in Nigeria, Ghana, Kenya or other African countries, and you get notified instantly.",
+  },
+];

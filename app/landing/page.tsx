@@ -1,12 +1,15 @@
 import React from 'react'
 import HeroPage from '../components/HeroPage'
 import Features from '../components/Features'
+import HowItWorks from '../components/HowItWorks'
 
 const page = () => {
   return (
     <div>
       <HeroPage />
-      <Features/>
+      <Features />
+      <HowItWorks />
+      {/* Add more sections as needed */}
     </div>
   )
 }
